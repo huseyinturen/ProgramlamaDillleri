@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HastaKayitKabul</class>
+ <widget class="QWidget" name="HastaKayitKabul">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>982</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>30</y>
+     <width>82</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QPushButton" name="btnEkle">
+      <property name="text">
+       <string>KAYIT EKLE</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnSil">
+      <property name="text">
+       <string>KAYIT SİL</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnAra">
+      <property name="text">
+       <string>KAYIT ARA</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>130</y>
+     <width>82</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QPushButton" name="btnGuncelle">
+      <property name="text">
+       <string>GÜNCELLE</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnListele">
+      <property name="text">
+       <string>KAYIT LİSTELE</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCikis">
+      <property name="text">
+       <string>ÇIKIŞ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnTemizle">
+      <property name="text">
+       <string>TEMİZLE</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>650</width>
+     <height>428</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Hasta Bilgileri</string>
+   </property>
+   <widget class="QCalendarWidget" name="cwRTarihi">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>228</y>
+      <width>312</width>
+      <height>190</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>206</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Doğum Tarihi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>206</y>
+      <width>77</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Randevu Tarihi</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="cwDTarihi">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>228</y>
+      <width>312</width>
+      <height>190</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lneAd">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>133</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lneTCK">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>133</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>11</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lneSoyad">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>90</y>
+      <width>133</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lneTCK_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>27</y>
+      <width>75</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T.C. Kimlik No</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lneAd_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>57</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ad</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lneSoyad_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>87</y>
+      <width>32</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soyad</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lneCinsiyet">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>117</y>
+      <width>42</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cinsiyet</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbCinsiyet">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>120</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Kadın</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Erkek</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="cmbHBolum">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>147</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>İç Hastalıkları</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yoğun Bakım</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kardiyoloji</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Göğüs Hastalıkları</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nöroloji</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Psikiyatri</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fiziksel Tıp ve Rehabilitasyon</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Genel Cerrahi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Üroloji</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Göz Hastalıkları</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kulak-Burun-Boğaz Hastalıkları</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Radyoloji</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ağız, Diş, Çene Hastalıkları ve Cerrahisi</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lneHbolum">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>147</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hastane Bölüm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lneDoktpr">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>177</y>
+      <width>39</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Doktor </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbDoktor">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>177</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Cemil ÇALIŞKAN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Muhtar Sinan ERSİN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Murat ZEYTÜNLÜ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Özer MAKAY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Recep Gökhan İÇÖZ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zekeriya Erhan AKGÜN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Alper UĞUZ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Levent YENİAY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Murat ÖZDEMİR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Taylan Özgür SEZER</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sibel BOYVADA ÖZALP</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>951</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>100</number>
+   </property>
+   <property name="columnCount">
+    <number>9</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>640</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Kayıt Sayısı:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>641</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>661</y>
+     <width>981</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
